@@ -1,2 +1,29 @@
 
+.navbar-collapse {
+    flex-grow: 0.4 !important;
+}
+
+@media (min-width: 992px){
+    .container-fluid{
+        justify-content: space-around;
+    }
+    .navbar-brand{
+        margin-right: 50px;
+    }
+}
+.nav-link {
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+.navbar-nav{
+    --bs-nav-link-hover-color:red
+}
+
+@media (min-width: 992px){
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
+}
+}
 

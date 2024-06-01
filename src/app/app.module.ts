@@ -6,8 +6,13 @@ import { AppComponent } from './app.component';
 import { HomeViewComponent } from './modules/components/home-view/home-view.component';
 import { NavbarComponent } from './modules/components/navbar/navbar.component';
 import { ContactComponent } from './modules/components/contact/contact.component';
-import { YogaCenterComponent } from './modules/components/yoga-center/yoga-center.component';
+import { YogaCenterComponent } from './modules/components/home-yoga-center/yoga-center.component';
 import { AboutComponent } from './modules/components/about/about.component';
+import { HomeView1Component } from './modules/components/home-view1/home-view1.component';
+import { HomeViewServiceComponent } from './modules/components/home-view-service/home-view-service.component';
+import { WhatsappComponent } from './modules/components/whatsapp/whatsapp.component';
+import { FooterComponent } from './modules/components/footer/footer.component';
+import { CorporateYogaComponent } from './modules/components/corporate-yoga/corporate-yoga.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { AboutComponent } from './modules/components/about/about.component';
     NavbarComponent,
     ContactComponent,
     YogaCenterComponent,
-    AboutComponent
+    AboutComponent,
+    HomeView1Component,
+    HomeViewServiceComponent,
+    WhatsappComponent,
+    FooterComponent,
+    CorporateYogaComponent
   ],
   imports: [
     BrowserModule,

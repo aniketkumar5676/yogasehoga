@@ -8,11 +8,10 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent {
 
-  constructor(private route:Router){
-
-  }
+  constructor(private route:Router){ }
+  
 navigate(arg0: string) {
-this.route.navigate([arg0])
+this.route.navigate([arg0],{skipLocationChange:true})
 }
 
 }
