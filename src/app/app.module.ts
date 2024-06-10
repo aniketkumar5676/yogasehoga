@@ -13,6 +13,14 @@ import { HomeViewServiceComponent } from './modules/components/home-view-service
 import { WhatsappComponent } from './modules/components/whatsapp/whatsapp.component';
 import { FooterComponent } from './modules/components/footer/footer.component';
 import { CorporateYogaComponent } from './modules/components/corporate-yoga/corporate-yoga.component';
+import { CallUsComponent } from './modules/components/call-us/call-us.component';
+import { OnlineYogaComponent } from './modules/components/online-yoga/online-yoga.component';
+import { ThreapyYogaComponent } from './modules/components/threapy-yoga/threapy-yoga.component';
+import { MeditationComponent } from './modules/components/meditation/meditation.component';
+import { AdvanceComponent } from './modules/components/advance-yoga/advance.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SliderMenterComponent } from './modules/components/slider-menter/slider-menter.component';
+import { MentorsComponent } from './modules/components/mentors/mentors.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +34,21 @@ import { CorporateYogaComponent } from './modules/components/corporate-yoga/corp
     HomeViewServiceComponent,
     WhatsappComponent,
     FooterComponent,
-    CorporateYogaComponent
+    CorporateYogaComponent,
+    CallUsComponent,
+    OnlineYogaComponent,
+    ThreapyYogaComponent,
+    MeditationComponent,
+    AdvanceComponent,
+    SliderMenterComponent,
+    MentorsComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

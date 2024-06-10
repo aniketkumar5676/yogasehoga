@@ -1,9 +1,8 @@
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     padding: 20px;
+    align-items: flex-start;
 }
 .bg{
     background-image: url("/assets/image/bg123.jpg")

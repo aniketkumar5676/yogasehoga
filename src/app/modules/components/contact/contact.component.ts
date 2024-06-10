@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -8,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit{
 
 
-  ngOnInit(): void {
-    window.scrollTo(0,0)
+  public contactForm!: any;
+  constructor(){
+
   }
 
+  ngOnInit(): void {
+    window.scrollTo(0,0);
+    this.contactForm = new FormGroup({
+      name: new FormControl(''),
+      isd: new FormControl('+91'),
+      phoneNumber: new FormControl(''),
+      email: new FormControl(''),
+      add1: new FormControl(''),
+      add2: new FormControl(''),
+      message: new FormControl(''),
+    });
+  }
+
+  yogaType:string=''
+
+  updateForm(type:string){
+   this.yogaType=type;
+  }
+
+  submit(){
+
+  }
 
 }
